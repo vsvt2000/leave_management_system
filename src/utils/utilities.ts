@@ -3,7 +3,7 @@ export const fetchRequests = async (
   setLoading: (value: boolean) => void,
   setRequests: (value: any[]) => void,
   setError: (value: string) => void,
-  SCRIPT_URL:string
+  SCRIPT_URL: string
 ) => {
   setLoading(true);
   setError("");
@@ -17,3 +17,22 @@ export const fetchRequests = async (
   }
   setLoading(false);
 };
+
+export const leaveTypes = [
+  { title: "Day Pass", value: "day pass" },
+  { title: "Home Pass", value: "home pass" },
+  { title: "Emergency Pass", value: "emergency pass" },
+  { title: "On Duty", value: "on duty" },
+];
+
+export const faculties = [
+  "Dr. Prashobh",
+  "Dr. Sathish",
+  "Dr. Suresh",
+  "Dr. Govind",
+  "Dr. Sangeetha",
+  "Dr. Balasubramanian",
+  "Dr. Nitesh",
+  "Dr. Deepak Ramanan",
+  "Dr. Deepak Gupta",
+];
